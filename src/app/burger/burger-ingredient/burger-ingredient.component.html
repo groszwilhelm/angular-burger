@@ -1,1 +1,4 @@
-<div [class]="ingredientType"></div>
+<div [class]="ingredientType">
+  <div [class.seeds1]="ingredientType === 'bread--top'"></div>
+  <div [class.seeds2]="ingredientType === 'bread--top'"></div>
+</div>

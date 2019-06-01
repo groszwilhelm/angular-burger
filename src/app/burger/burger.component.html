@@ -1,4 +1,9 @@
 <div class="burger">
   <univ-burger-ingredient ingredientType="bread--top"></univ-burger-ingredient>
+
+  <univ-burger-ingredient *ngFor="let ingredient of ingredients"
+    [ingredientType]="ingredient">
+  </univ-burger-ingredient>
+
   <univ-burger-ingredient ingredientType="bread--bottom"></univ-burger-ingredient>
 </div>

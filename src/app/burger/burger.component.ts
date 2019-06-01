@@ -1,4 +1,4 @@
-import { Component, HostBinding } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'univ-burger',
@@ -6,5 +6,6 @@ import { Component, HostBinding } from '@angular/core';
   styleUrls: ['./burger.component.css']
 })
 export class BurgerComponent {
-
+  @Input()
+  public ingredients: Array<string> = [];
 }

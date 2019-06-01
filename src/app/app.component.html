@@ -1,1 +1,9 @@
-<univ-burger></univ-burger>
+<univ-configurator></univ-configurator>
+<univ-burger [ingredients]="ingredients"></univ-burger>
+
+<h3>Historical burgers</h3>
+
+<div class="burger-container" *ngFor="let burger of historicBurgers">
+  <univ-burger [ingredients]="burger.ingredients"></univ-burger>
+</div>
+
